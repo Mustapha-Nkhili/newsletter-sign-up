@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+
+  <title>Newsletter sign-up form</title>
+
+  <!-- link all css files -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container page active">
+    <!-- Sign-up form start -->
+    <main class="main-content">
+      <span>Stay updated!</span>
+      <div class="info">
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul>
+          <li>Product discovery and building what matters</li>
+          <li>Measuring to ensure updates are a success</li>
+          <li>And much more!</li>
+        </ul>
+      </div>
+
+      <form>
+        <div>
+          <label for="subEmail">Email address</label>
+          <input type="email" name="sub-email" id="subEmail" placeholder="email@company.com">
+        </div>
+        <input type="button" value="Subscribe to monthly newsletter" id="subscribeBtn">
+      </form>
+    </main>
+
+    <!-- Sign up illustration start -->
+    <section>
+      <picture>
+        <source srcset="assets/images/illustration-sign-up-mobile.svg" media="(max-width: 700px)">
+        <img src="assets/images/illustration-sign-up-desktop.svg" alt="this is an illustration of a sign up form">
+      </picture>
+    </section>
+    <!-- Sign up illustration end -->
+  </div>
+
+  <div class="message-container page">
+    <!-- Success message start -->
+    <main class="success-box">
+      <img src="../assets/images/icon-success.svg" alt="this is an icon about success">
+      <span class="sub-thanks">Thanks for subscribing!</span>
+      <p>
+        A confirmation email has been sent to <span class="email"></span>.
+        Please open it and click the button inside to confirm your subscription.
+      </p>
+      <input type="button" value="Dismiss message" id="dismissBtn">
+    </main>
+    <!-- Success message end -->
+  </div>
+
+  <!-- Sign-up form end -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
